@@ -21,7 +21,7 @@ cd /var/www/html/php
 sudo chown -R apache:apache /var/www/html/php
 sudo chmod -R 755 /var/www/html/php
 
-# Create Apache virtual host configuration
+# Configure Apache virtual host for serving PHP files
 echo "
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
@@ -30,6 +30,7 @@ echo "
         Options Indexes FollowSymLinks
         AllowOverride All
         Require all granted
+        DirectoryIndex index.php
     </Directory>
 </VirtualHost>
 " | sudo tee /etc/httpd/conf.d/php.conf
