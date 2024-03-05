@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo mkdir /home/packerizer
+#sudo mkdir /home/packerizer
 # Install Apache (httpd) and other necessary packages
 sudo yum install httpd -y
 
