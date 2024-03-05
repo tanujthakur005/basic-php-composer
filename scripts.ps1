@@ -10,10 +10,12 @@ sudo systemctl enable httpd
 # Setup directory
 sudo mkdir -p /var/www/html/php
 
+sudo cp -r _tanujthakur005_basic-php-composer/* /var/www/html/php
+
 cd /var/www/html/php
 
 # Copy over build artifacts
-sudo cp -r _tanujthakur005_basic-php-composer/* /var/www/html/php
+
 
 # Set proper permissions for Apache to access the directory
 sudo chown -R apache:apache /var/www/html/php
