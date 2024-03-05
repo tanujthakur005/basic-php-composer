@@ -13,7 +13,7 @@ sudo mkdir /var/www/html/php
 cd /var/www/html/php
 
 # Copy over build artifacts
-sudo cp -r /tmp/ _tanujthakur005_php_code/* .
+sudo cp -r /tmp/ _tanujthakur005_basic-php-composer/* .
 
 # Set proper permissions for Apache to access the directory
 sudo chown -R apache:apache /var/www/html/php
