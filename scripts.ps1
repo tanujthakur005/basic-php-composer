@@ -8,7 +8,7 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 
 # Setup directory
-sudo mkdir /var/www/html/php
+sudo mkdir -p /var/www/html/php
 
 cd /var/www/html/php
 
